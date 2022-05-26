@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.less";
 import reportWebVitals from "./reportWebVitals";
-import { HashRouter } from "react-router-dom";
-import { AppRoutes } from "routes";
+import {HashRouter} from "react-router-dom";
+import {AppRoutes} from "routes";
 
 const root = ReactDOM.createRoot(
     document.getElementById("root") as HTMLElement
@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <HashRouter>
-            <AppRoutes />
+            <AppRoutes/>
         </HashRouter>
     </React.StrictMode>
 );

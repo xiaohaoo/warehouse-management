@@ -1,9 +1,9 @@
-import { useRoutes } from "react-router-dom";
-import { ProductPage } from "../pages/products";
-import { createElement } from "react";
-import { ActionPage } from "../pages/actions";
-import { App } from "../App";
-import { NotFoundPage } from "../pages/not-found";
+import {Navigate, useRoutes} from "react-router-dom";
+import {ProductPage} from "../pages/products";
+import {createElement} from "react";
+import {ActionPage} from "../pages/actions";
+import {App} from "../App";
+import {NotFoundPage} from "../pages/not-found";
 
 export const AppRoutes = () => {
     return useRoutes([
@@ -12,7 +12,7 @@ export const AppRoutes = () => {
             children: [
                 {
                     index: true,
-                    element: createElement(ProductPage)
+                    element: createElement(Navigate, {to: "/product"})
                 },
                 {
                     path: "product",
