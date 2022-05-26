@@ -51,6 +51,7 @@ public class ActionService {
                     .setName(action.getName())
                     .setNumber(action.getNumber());
                 productService.saveOne(product);
+                action.setCreatedTime(stringOfNowDateTime);
                 action.setProductId(product.getId());
             } else {
                 action.setCreatedTime(stringOfNowDateTime).setName(product.getName()).setProductId(product.getId()).setNumber(product.getNumber());
