@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./App.module.less";
-import { Menu } from "antd";
-import { useNavigate, useOutlet } from "react-router-dom";
+import {Menu} from "antd";
+import {useNavigate, useOutlet} from "react-router-dom";
 
 export const App = () => {
     const outlet = useOutlet();
@@ -38,7 +38,7 @@ export const App = () => {
                 {outlet}
             </div>
             <div className={styles.footer}>
-                仓库在线管理 © 2022
+                仓库在线管理 © 2022 电脑版
             </div>
         </div>
 
